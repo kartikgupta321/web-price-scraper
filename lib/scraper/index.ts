@@ -41,7 +41,10 @@ export async function scrapeAmazonProduct(url: string){
       $('.a-size-base.a-color-price')
     )
     const outOfStock = $('#availability span').text().trim().toLowerCase() === 'currently unavailable';
-    console.log({title, currentPrice, originalPrice, outOfStock});
+    const image = $('#imgBlkFront').attr('data-a-dynamic-image') || 
+                  $('#landingImage').attr('data-dynamic-image');
+
+    console.log({title, currentPrice, originalPrice, outOfStock, image});
 
 
   } catch (error: any) {
