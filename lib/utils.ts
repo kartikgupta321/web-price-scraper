@@ -1,7 +1,7 @@
-// import { PriceHistoryItem, Product } from "@/types";
+import { PriceHistoryItem, Product } from "@/types";
 
 const Notification = {
-  WELCOME: 'WELCOME',
+  WELCOME: 'WELCOME', 
   CHANGE_OF_STOCK: 'CHANGE_OF_STOCK',
   LOWEST_PRICE: 'LOWEST_PRICE',
   THRESHOLD_MET: 'THRESHOLD_MET',
